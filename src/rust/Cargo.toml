@@ -1,0 +1,14 @@
+[package]
+name = 'lamp'
+publish = false
+version = '0.1.0'
+edition = '2021'
+
+[lib]
+crate-type = [ 'staticlib' ]
+name = 'lamp'
+
+[dependencies]
+candle-core = { version = "0.8.0", features = ["cuda"] }
+extendr-api = { version = '*', features = ["result_condition"] }
+safetensors = "0.4.5"
